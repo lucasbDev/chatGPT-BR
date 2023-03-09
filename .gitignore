@@ -1,0 +1,17 @@
+.idea/
+.vscode/
+node_modules/
+build/
+temp/
+.env
+coverage
+ormconfig.json
+dist
+.docker/dbdata
+
+
+uploads/*
+!uploads/.gitkeep
+.docker-compose
+.DockerFile
+.docker/
