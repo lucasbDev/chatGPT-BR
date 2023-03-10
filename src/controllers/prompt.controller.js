@@ -4,10 +4,10 @@ module.exports = {
     async sendText(request, response) {
 
         const openAI = openai.configuration()
-        const inputModel = new inputModel(request.body)
+        const inputModel = new InputPrompt(request.body)
         try {
             const response = await openAI.createCompletion(
-                inputModel
+                openai.textCompletion(inputModel)
             )
             return response.status(200).json(
                 {
@@ -22,8 +22,5 @@ module.exports = {
                 error: error.response ? error.response.data : "server error"
              })
         }
-        return response.status(200).json({
-            message: "hello wworld"
-        })
     }
 }
