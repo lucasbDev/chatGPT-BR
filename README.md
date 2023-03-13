@@ -3,7 +3,7 @@
 
 
 
-## Descrição ( Em contrução 🚧)
+## Descrição ( Em construção 🚧)
 - Projeto que consome a API gratuita do OPENAI,
 
 ## Instalação
